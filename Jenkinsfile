@@ -16,12 +16,9 @@ pipeline {
         }
 
         stage('Aceptación') {
-                stage('Aceptación team 1') {
-                    steps{
-                        sh "mvn verify"
-                    }
-                }
+            steps{
+                sh "mvn verify"
+            }
         }
-
     }
 }
